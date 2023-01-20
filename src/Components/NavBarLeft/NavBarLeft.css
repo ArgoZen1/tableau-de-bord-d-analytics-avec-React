@@ -1,0 +1,41 @@
+aside {
+    background-color: #020203;
+    box-shadow: 5px 0 5px #00000040;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: fixed;
+    width: 115px;
+    z-index: 1;
+}
+aside img {
+    width: 36px;
+    height: 32px;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+.background_padding_logo {
+    position: relative;
+    background-color: #ffffff;
+    width: 64px;
+    height: 64px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.background_padding_logo:hover {
+    cursor: pointer;
+}
+
+/* Copyright */
+.copyright {
+    bottom: 125px;
+    display: block;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) rotate(-90deg);
+    width: max-content;
+}

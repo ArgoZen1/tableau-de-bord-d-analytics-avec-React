@@ -1,0 +1,21 @@
+.container_user_performance {
+    position: relative;
+    width: 230px;
+    height: 263px;
+    background: #282d30;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.container_last_graph {
+    display: flex;
+    gap: 7rem;
+}
+@media screen and (max-width: 1745px) {
+    .container_last_graph {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+    }
+}

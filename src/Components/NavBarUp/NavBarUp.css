@@ -1,0 +1,32 @@
+header {
+    align-items: center;
+    background-color: #020203;
+    box-shadow: 0 5px 5px #00000040;
+    display: flex;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+/* Logo */
+.logo {
+    margin-left: 30px;
+}
+
+/* Menu */
+nav {
+    display: inline-flex;
+    width: 100%;
+}
+
+nav > a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: auto;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav > a:hover {
+    color: #e60000;
+}

@@ -1,0 +1,40 @@
+.home__container__keydata {
+    background-color: rgb(247, 247, 247);
+    width: 16rem;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2.9rem;
+}
+.home__container__icon {
+    width: 60px;
+    height: 60px;
+}
+.logo_test_keydata {
+    display: flex;
+    gap: 1.5rem;
+}
+.kaydata_container {
+    position: absolute;
+    top: 15.3%;
+    right: 9%;
+}
+@media screen and (max-width: 1745px) {
+    .kaydata_container {
+        position: relative;
+        display: flex;
+
+        width: 100%;
+        margin: 0 auto;
+        right: 0;
+    }
+    .kaydata {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

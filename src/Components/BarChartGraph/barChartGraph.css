@@ -1,0 +1,35 @@
+.graph {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 2px black; */
+    width: 90%;
+    height: 80%;
+    background-color: rgb(247, 247, 247);
+    margin-top: 3rem;
+}
+.container_p_span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+.activity {
+    padding-left: 2.8rem;
+}
+.container_block_up {
+    /* border: solid 2px black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1745px) {
+    .graph {
+        width: 100%;
+    }
+    .home__container__firstname__graph {
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+.container_score {
+    position: relative;
+    width: 258px;
+    height: 263px;
+    background: rgb(247, 247, 247);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 4px;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.container_score h3 {
+    position: absolute;
+    left: 18%;
+    top: 6%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #20253a;
+}
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #74798c;
+    background: rgb(251, 251, 251);
+    border-radius: 50%;
+    padding: 3.4rem 2.7rem;
+}
+.text span {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    font-size: 26px;
+}
