@@ -5,17 +5,21 @@ import { v4 as uuidv4 } from 'uuid';
 
 interface Props {
     data: {
-        todayScore?: number;
-        score: number;
+        todayScore?: number; // today's score, may be undefined
+        score: number; // overall score
     };
 }
 
 const ScoreChart: React.FC<Props> = ({ data }) => {
+    // create array of scores
     const score = [
+        // if today's score exists, use it, otherwise use overall score
         { value: data.todayScore || data.score },
         { value: 1 - (data.todayScore || data.score) },
     ];
     console.log(score)
+
+
 
     return (
         <div className="container_score">

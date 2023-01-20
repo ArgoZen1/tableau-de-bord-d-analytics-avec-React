@@ -8,18 +8,13 @@ header {
     position: fixed;
     z-index: 2;
 }
-
-/* Logo */
 .logo {
     margin-left: 30px;
 }
-
-/* Menu */
 nav {
     display: inline-flex;
     width: 100%;
 }
-
 nav > a {
     color: #ffffff;
     font-size: 24px;

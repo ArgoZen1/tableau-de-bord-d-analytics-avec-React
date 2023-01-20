@@ -18,17 +18,24 @@ import ScoreChart from '../Components/ScoreChart/ScoreChart';
 const Home: React.FC = () => {
 
     const [data, setData] = useState<IUserMainData | any>([]);
+    // get user ID from URL parameters
     const { id } = useParams<{ id: string }>();
 
     useEffect(() => {
+        // function to fetch data from API
         const fetchData = async () => {
+            // make request to API
             const request: any = await getData("USER_MAIN_DATA", + `${id}`);
+            // if request failed, display error message
             if (!request) return alert("data error");
+            // set the data to the state
             setData(request.data);
             console.log(request.data.userInfos.firstName)
         };
+        // invoke the function
         fetchData();
     }, [id]);
+    // If no data found return null
     if (data.length === 0) return null;
 
     return (

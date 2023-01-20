@@ -1,10 +1,9 @@
 .graph {
     display: flex;
     flex-direction: column;
-    /* border: solid 2px black; */
     width: 90%;
     height: 80%;
-    background-color: rgb(247, 247, 247);
+    background-color: #fbfbfb;
     margin-top: 3rem;
 }
 .container_p_span {
@@ -18,7 +17,6 @@
     padding-left: 2.8rem;
 }
 .container_block_up {
-    /* border: solid 2px black; */
     display: flex;
     align-items: center;
     justify-content: space-between;

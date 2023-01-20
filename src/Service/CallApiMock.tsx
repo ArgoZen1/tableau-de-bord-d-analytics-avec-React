@@ -10,6 +10,7 @@ interface UserData {
 }
 
 export const getData = async (type: keyof UserData, id: number, data: any = []): Promise<any> => {
+    // depending on the type of data, call the appropriate function and store the result in data
     data = {
         "USER_MAIN_DATA": await getUserInfos(id),
         "USER_ACTIVITY": await getUserActivity(id),
