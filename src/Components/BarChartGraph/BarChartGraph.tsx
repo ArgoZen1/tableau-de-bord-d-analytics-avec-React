@@ -41,8 +41,8 @@ const BarChartGraph: React.FC = () => {
             <div className='container_block_up'>
                 <p className='activity'>Activité quotidienne</p>
                 <div className='container_p_span'>
-                    <p><span>.</span>Poids (kg)</p>
-                    <p><span>.</span>Calories brulées (kCal)</p>
+                    <p className='p1'>Poids (kg)</p>
+                    <p className='p2'>Calories brulées (kCal)</p>
                 </div>
             </div>
             <div>

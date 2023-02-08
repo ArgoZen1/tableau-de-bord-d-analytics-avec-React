@@ -13,6 +13,24 @@
     gap: 2rem;
     padding: 1.5rem;
 }
+.container_p_span .p1::before {
+    content: "";
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #282d30;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.container_p_span .p2::before {
+    content: "";
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
 .activity {
     padding-left: 2.8rem;
 }
