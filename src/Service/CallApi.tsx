@@ -1,59 +1,60 @@
 import axios from "axios";
 import { IUserMainData, IUserActivity, IUserAverageSessions, IUserPerformance } from "../interfaces";
-
-
+import { mockUserActivity, mockUserInfos, mockUserPerformance, mockUserAverageSessions } from "../mockData/mockData";
 
 const api = axios.create({
-    baseURL: `http://localhost:3000/`, // base URL for API calls
+    baseURL: `http://localhost:3000/`,
     headers: {
-        "Content-type": "application/json" // set content-type header to json
+        "Content-type": "application/json"
     }
 });
 
-// function to fetch user activity data
+const ignoreNotFoundError = (error: any) => {
+    // If the error is a 404, we don't want to log it to the console
+    if (error.response?.status === 404) {
+        console.log("Resource not found");
+    } else {
+        console.error(error);
+        throw error;
+    }
+};
+
 export const getUserActivity = async (id: number) => {
     try {
-        // make a GET request to the API
         const res = await api.get<IUserActivity>(`/user/${id}/activity`);
-        // return the data
         return res.data;
     } catch (e) {
-        console.log(e);
+        ignoreNotFoundError(e);
+        return mockUserActivity(id);
     }
 };
 
-// function to fetch user infos data
 export const getUserInfos = async (id: number) => {
     try {
-        // make a GET request to the API
         const res = await api.get<IUserMainData>(`/user/${id}`);
-        // return the data
         return res.data;
     } catch (e) {
-        console.log(e);
+        ignoreNotFoundError(e);
+        return mockUserInfos(id);
     }
 };
 
-// function to fetch user performance data
 export const getUserPerformance = async (id: number) => {
     try {
-        // make a GET request to the API
         const res = await api.get<IUserPerformance>(`/user/${id}/performance`);
-        // return the data
         return res.data;
     } catch (e) {
-        console.log(e);
+        ignoreNotFoundError(e);
+        return mockUserPerformance(id);
     }
 };
 
-// function to fetch user average sessions data
 export const getUserAverageSessions = async (id: number) => {
     try {
-        // make a GET request to the API
         const res = await api.get<IUserAverageSessions>(`user/${id}/average-sessions`);
-        // return the data
         return res.data;
     } catch (e) {
-        console.log(e);
+        ignoreNotFoundError(e);
+        return mockUserAverageSessions(id);
     }
 };

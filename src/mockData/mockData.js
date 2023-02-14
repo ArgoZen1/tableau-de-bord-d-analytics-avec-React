@@ -268,7 +268,7 @@ export const USER_PERFORMANCE = [
  * @param {number} id User id
  * @returns {object} Response
  */
-export const getUserInfos = async (id) => {
+export const mockUserInfos = async (id) => {
     try {
         const res = USER_MAIN_DATA.find((el) => el.id === id);
         return { data: res };
@@ -284,7 +284,7 @@ export const getUserInfos = async (id) => {
  * @param {number} id User id
  * @returns {object} Response
  */
-export const getUserActivity = async (id) => {
+export const mockUserActivity = async (id) => {
     try {
         const res = USER_ACTIVITY.find((el) => el.userId === id);
         return { data: res };
@@ -299,7 +299,7 @@ export const getUserActivity = async (id) => {
  * @param {number} id User id
  * @returns {object} Response
  */
-export const getUserAverageSessions = async (id) => {
+export const mockUserAverageSessions = async (id) => {
     try {
         const res = USER_AVERAGE_SESSIONS.find((el) => el.userId === id);
         return { data: res };
@@ -314,7 +314,7 @@ export const getUserAverageSessions = async (id) => {
  * @param {number} id User id
  * @returns {object} Response
  */
-export const getUserPerformance = async (id) => {
+export const mockUserPerformance = async (id) => {
     try {
         const res = USER_PERFORMANCE.find((el) => el.userId === id);
         return { data: res };

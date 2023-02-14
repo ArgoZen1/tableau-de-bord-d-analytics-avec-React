@@ -1,6 +1,6 @@
-import { getUserActivity, getUserAverageSessions, getUserInfos, getUserPerformance } from "../mockData/mockData";
+// import { getUserActivity, getUserAverageSessions, getUserInfos, getUserPerformance } from "../mockData/mockData";
 import { IUserMainData, IUserActivity, IUserAverageSessions, IUserPerformance } from "../interfaces";
-// import { getUserActivity, getUserAverageSessions, getUserInfos, getUserPerformance, } from "./CallApi"
+import { getUserActivity, getUserAverageSessions, getUserInfos, getUserPerformance, } from "./CallApi"
 
 interface UserData {
     USER_MAIN_DATA: IUserMainData;

@@ -1,5 +1,5 @@
 export interface IUserMainData {
-    id?: number | null;
+    id?: number;
     userInfos: {
         firstName: string;
         lastName: string;
